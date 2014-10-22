@@ -19,10 +19,10 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
     </head>
-<body>
+<body onload="init();">
 <div class="pages_wrapper">
 
-<div class="page">
+<div class="page" id="p1">
 	<div class="page_inner p1">
 	<div class="page_prew">
 		<div class="ppr_center"></div>
@@ -40,7 +40,7 @@
 	</div>
 </div>
 
-<div class="page">
+<div class="page" id="p2">
 
 	<div class="page_inner p2">
 	<div class="page_prew">
@@ -59,7 +59,7 @@
 	</div>
 </div>
 
-<div class="page">
+<div class="page" id="p3">
 
 	<div class="page_inner p3">
 	<div class="page_prew">
@@ -83,24 +83,13 @@
 
 <div class="left_pan">
 	<div class="fr_logo"> </div>
-		<div class="nav_btn">Projects</div>
-		<div class="nav_btn">FoxLab</div>
-		<div class="nav_btn">FoxUI</div>
+		<div class="nav_btn btn_init_state" data-target="p1" data-pclr="#88d1b5">Projects</div>
+		<div class="nav_btn" data-target="p2" data-pclr="#fc865a">FoxLab</div>
+		<div class="nav_btn" data-target="p3" data-pclr="#3ca8d8">FoxUI</div>
 </div>
 <div class="fox_feed">
 
-<div id="instafeed">111</div>
-	
 </div>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/instafeed.min.js"></script>
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'megavisor',
-        clientId: 'foxrandom'
-    });
-    feed.run();
-</script>
 </body>
 </html>
