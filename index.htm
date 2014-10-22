@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dressformer</title>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="description" content="Dressformer Widget Testing Page">
+        <meta name="keywords" content="[[*keywords]]" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-icon-57x57-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-icon-72x72-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-icon-114x114-precomposed.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-icon-144x144-precomposed.png" />
+        <link rel="stylesheet" href="css/common.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    </head>
+<body>
+
+<div class="basic_wrapper">
+	
+<div class="center_col">
+<div class="viewport_wrapper">
+	<iframe src="http://v2.dressformer.com/widget/" frameborder="0" class="df_viewport" scrolling="no"></iframe>
+	<div class="make_shot">&#xf030;</div>
+	<div class="buy_vp_content">&#xf07a;</div>
+</div>
+</div>
+
+<div class="left_col" onclick="activePan.settings();">
+	<div class="col_btns">
+		<div class="col_btn" title="measurements">&#xf1de;</div>
+		<div class="col_btn" title="dummy">&#xf013;</div>
+		<div class="col_btn" title="profile">&#xf007;</div>
+		<div class="col_btn" title="share">&#xf1e0;</div>
+		<div class="col_btn" title="help">&#xf128;</div>
+	</div>
+	<div class="col_content left_cont">
+	<div class="col_content_inner" id="measurements" data-clr="#b15757">
+	<div class="cc_title algn_lt">Measurements</div>
+	<div class="m_title">Height:</div>
+	<div class="size_setter">
+		<div class="ss_minus">&#xf068;</div>
+		<div class="ss_enter" contenteditable="true"></div>
+		<div class="ss_plus">&#xf067;</div>
+	</div>
+	<div class="m_title">Bust size:</div>
+	<div class="size_setter">
+		<div class="ss_minus">&#xf068;</div>
+		<div class="ss_enter" contenteditable="true"></div>
+		<div class="ss_plus">&#xf067;</div>
+	</div>
+	<div class="m_title">Bust circum:</div>
+	<div class="size_setter">
+		<div class="ss_minus">&#xf068;</div>
+		<div class="ss_enter" contenteditable="true"></div>
+		<div class="ss_plus">&#xf067;</div>
+	</div>
+	<div class="m_title">Underbust circum:</div>
+	<div class="size_setter">
+		<div class="ss_minus">&#xf068;</div>
+		<div class="ss_enter" contenteditable="true"></div>
+		<div class="ss_plus">&#xf067;</div>
+	</div>
+	<div class="m_title">Hips circum:</div>
+	<div class="size_setter">
+		<div class="ss_minus">&#xf068;</div>
+		<div class="ss_enter" contenteditable="true"></div>
+		<div class="ss_plus">&#xf067;</div>
+	</div>
+	</div>
+	<div class="col_content_inner" id="dummy" data-clr="#445e8e">
+	<div class="cc_title algn_lt">Dummy Settings</div>
+	
+	</div>
+	<div class="col_content_inner" id="profile" data-clr="#3c9f8c">
+	<div class="cc_title algn_lt">Profile</div>
+		
+	</div>
+	<div class="col_content_inner" id="share" data-clr="#b1579c">
+	<div class="cc_title algn_lt">Share outfit</div>
+	
+	</div>
+	<div class="col_content_inner" id="help" data-clr="#89903c">
+	<div class="cc_title algn_lt">Help</div>
+		<div class="cc_text">
+		Dressformer envisioned a way to establish a new level of comfort for online buyers of clothing and shoes, by giving them the opportunity to try on future purchases using a virtual 3D-twin. This allows customers to quickly make the right choices when buying clothing and shoes, reducing to a minimum the risk of returns due to improper sizing or style.
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="right_col" onclick="activePan.garments();">
+	<div class="col_btns">
+		<div class="col_btn" title="feed">&#xf004;</div>
+		<div class="col_btn" title="recommendations">&#xf19d;</div>
+		<div class="col_btn" title="shop">&#xf09d;</div>
+		<div class="col_btn" title="friends">&#xf182;</div>
+		<div class="col_btn" title="search">&#xf002;</div>
+	</div>
+	
+	<div class="col_content right_cont">
+		<div class="col_content_inner" id="feed" data-clr="#722b57">
+		<div class="cc_title algn_rt">3D Fashion Feed</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		</div>
+		<div class="col_content_inner" id="recommendations" data-clr="#89903c">
+		
+		<div class="cc_title algn_rt">Recommendations</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		
+		</div>
+		<div class="col_content_inner" id="shop" data-clr="#606060">
+		
+		<div class="cc_title algn_rt">3D Shopping</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		
+		</div>
+		<div class="col_content_inner" id="friends" data-clr="#038791">
+		
+		<div class="cc_title algn_rt">Friends Feed</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		<div class="feed_block">
+			<div class="fb_img"></div>
+			<div class="fb_title">Block Title</div>
+			<div class="fb_text">Block description.</div>
+		</div>
+		
+		</div>
+		<div class="col_content_inner" id="search" data-clr="#af1367">
+		<div class="cc_title algn_rt">Search</div>
+		<div class="search" contenteditable="true" data-clr="#5b5c58"></div>
+		<div class="search_btn">&#xf002;</div>
+		</div>
+	</div>
+	
+</div>
+
+</div>
+
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
