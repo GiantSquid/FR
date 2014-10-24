@@ -9,6 +9,8 @@ function init() {
 	$( '.btn_init_state' ).css( 'background-color', initClr );
 	$( '.btn_init_state' ).css( 'color', '#fff' );
 	scrollTo( 'p1' );
+	
+	$( '.sld1' ).css( 'opacity', '1' );
 }
 
 $( '.nav_btn' ).click(function() {
@@ -40,3 +42,17 @@ $( '.nav_btn' ).click(function() {
 	curBtn.css( 'background-color', curBtnClr );
 	curBtn.css( 'color', '#fff' );
 });*/
+
+$( '.slide_btn' ).click(function() {
+	
+	$( '.slb_cur' ).removeClass( 'slb_cur' );
+	$( this ).addClass( 'slb_cur' );
+	
+	var TgtSld = $( this ).attr( 'data-bind' );
+	
+	$( '.slide' ).css( 'opacity', '0' );
+	$( '.' + TgtSld ).css( 'opacity', '1' );
+	
+	console.log( TgtSld );
+
+});

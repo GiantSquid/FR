@@ -16,12 +16,6 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://themes.googleusercontent.com/static/fonts/opensanscondensed/v7/gk5FxslNkTTHtojXrkp-xM5toMuE7weLtA-LqYsX3xvr7w4p9aSvGirXi6XmeXNA.woff) format('woff');
-}
-@font-face {
     font-family: 'IconFont';
     src: url('../fonts/iconfont.ttf');
 }
@@ -68,6 +62,8 @@ iframe {
 	border-radius: 20px;
 	.box;
 	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
 	color: #fff;
 }
 
@@ -234,4 +230,47 @@ iframe {
 }
 .ppn_icon:hover {
 	font-size: 24px;
+}
+.slide_btn {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 22px;
+	width: 40px;
+	border-radius: 20px;
+	.box;
+	background-color: rgba(256, 256, 256, 0.2);;
+	color: #fff;
+	text-align: center;
+	font-family: 'Dosis';
+	cursor: pointer;
+	transition: 0.2s;
+}
+.slide_btn:hover {
+	background-color: rgba(256, 256, 256, 0.5);
+}
+
+.slider {
+	text-align: center;
+}
+
+.slb_cur {
+	background-color: #fff;
+	color: #000;
+}
+
+.slide {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 80%;
+	width: 80%;
+	.box;
+	font-family: 'Bad Script';
+	font-size: 80px;
+	opacity: 0;
+	transition: 0.4s;
 }
